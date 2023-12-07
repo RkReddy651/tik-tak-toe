@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Board from "./Board";
 import GameOver from "./GameOver";
 import GameState from "./GameState";
-//import Reset from "./Reset";
+import Reset from "./Reset";
 import gameOverSoundAsset from "../sounds/game_over.wav";
 import clickSoundAsset from "../sounds/click.wav";
 
@@ -115,7 +115,7 @@ function TicTacToe() {
         strikeClass={strikeClass}
       />
       <GameOver gameState={gameState} />
-      {/* <Reset gameState={gameState} onReset={handleReset} /> */}
+      <Reset gameState={gameState} onReset={handleReset} />
     </div>
   );
 }
